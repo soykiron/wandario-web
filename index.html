@@ -7,11 +7,15 @@
 <meta name="description" content="Marca el mundo que has conocido y el que te queda por conocer. Tu mapa, tu pasaporte con sellos y logros, tus itinerarios y tus amigos, en una sola app.">
 <meta name="theme-color" content="#3a0c19">
 <link rel="canonical" href="https://wandario.es/">
+<link rel="alternate" hreflang="es" href="https://wandario.es/">
+<link rel="alternate" hreflang="en" href="https://wandario.es/en/">
+<link rel="alternate" hreflang="x-default" href="https://wandario.es/">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="/site.webmanifest">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="es_ES">
 <meta property="og:title" content="Wandario · Tu pasaporte digital de viajes">
 <meta property="og:description" content="Marca el mundo que has conocido y el que te queda por conocer. Tu mapa, tu pasaporte con sellos y logros, tus itinerarios y tus amigos, en una sola app.">
 <meta property="og:url" content="https://wandario.es/">
@@ -24,7 +28,15 @@
 <div class="twinkle" aria-hidden="true"></div>
 <header class="top wrap">
   <a class="brand" href="/" aria-label="Wandario, inicio"><span class="word">WANDARI</span><span class="o" aria-hidden="true"><span class="face fa"><svg viewBox="0 0 62 62"><circle cx="31" cy="31" r="30" fill="url(#gdisc)"/><polygon points="44,18 26.9,26.9 18,44 35,35" fill="#3a0c19"/></svg></span><span class="face fb"><svg viewBox="0 0 62 62"><circle cx="31" cy="31" r="30" fill="url(#gdisc)"/><path transform="translate(31 31) scale(.95) translate(-31 -31)" d="M31 17l2.4 9.5 10.6 5.4v3l-10.6-2.4-.8 6.5 3.8 3v2.4L31 42.6l-4.4 1.8V42l3.8-3-.8-6.5L19 34.9v-3l10.6-5.4z" fill="#3a0c19"/></svg></span></span></a>
-  <nav><a href="/soporte/">Soporte</a></nav>
+  <nav>
+    <a class="sup" href="/soporte/">Soporte</a>
+    <details class="lang"><summary aria-label="Idioma / Language"><span class="flag"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#c8102e" stroke-width="3"/><path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="13"/><path d="M30 0V40M0 20H60" stroke="#c8102e" stroke-width="8"/></svg></span><svg class="chev" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+      <div class="menu">
+        <a href="/" hreflang="es" lang="es" aria-current="true"><span class="flag"><svg viewBox="0 0 22 16" aria-hidden="true"><rect width="22" height="16" fill="#c60b1e"/><rect y="4" width="22" height="8" fill="#ffc400"/></svg></span>Español<i class="tick">✓</i></a>
+        <a href="/en/" hreflang="en" lang="en"><span class="flag"><svg viewBox="0 0 60 40" aria-hidden="true"><rect width="60" height="40" fill="#012169"/><path d="M0 0L60 40M60 0L0 40" stroke="#fff" stroke-width="8"/><path d="M0 0L60 40M60 0L0 40" stroke="#c8102e" stroke-width="3"/><path d="M30 0V40M0 20H60" stroke="#fff" stroke-width="13"/><path d="M30 0V40M0 20H60" stroke="#c8102e" stroke-width="8"/></svg></span>English</a>
+      </div>
+    </details>
+  </nav>
 </header>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><linearGradient id="gdisc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f7e7b0"/><stop offset=".35" stop-color="#e2bb52"/><stop offset=".7" stop-color="#c9a227"/><stop offset="1" stop-color="#b48a1c"/></linearGradient></defs></svg>
 <main>
@@ -73,9 +85,7 @@
       <div class="pro reveal">
         <h2 class="gold reveal">Wandario PRO</h2>
         <p class="sub" style="margin-bottom:0">Un único pago, para siempre.</p>
-        <ul>
-          <li>Regiones y provincias</li><li>Ciudades del mundo</li><li>Pueblos de España</li><li>Aeropuertos</li><li>Temas del mapa</li><li>Imágenes para compartir</li>
-        </ul>
+        <ul><li>Regiones y provincias</li><li>Ciudades del mundo</li><li>Pueblos de España</li><li>Aeropuertos</li><li>Temas del mapa</li><li>Imágenes para compartir</li></ul>
         <p style="color:var(--soft);font-size:14px;margin-top:14px">Lo básico, marcar países y continentes y tu pasaporte, es gratis.</p>
       </div>
     </div>
@@ -100,5 +110,6 @@ els.forEach(function(e){var sib=Array.prototype.indexOf.call(e.parentNode.childr
 var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:0.15});
 els.forEach(function(e){io.observe(e)})})();
 </script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.lang[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})})</script>
 </body>
 </html>
