@@ -49,6 +49,6 @@
     <div>© 2026 Wandario · <a href="mailto:hola@wandario.es" style="margin:0">hola@wandario.es</a></div>
   </div>
 </footer>
-<script>document.addEventListener('click',function(e){document.querySelectorAll('details.lang[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})})</script>
+<script>document.addEventListener('click',function(e){document.querySelectorAll('details.lang[open]').forEach(function(d){if(!d.contains(e.target))d.removeAttribute('open')})});document.querySelectorAll('a.back').forEach(function(a){a.addEventListener('click',function(e){try{if(document.referrer&&new URL(document.referrer).origin===location.origin&&history.length>1){e.preventDefault();history.back()}}catch(x){}})})</script>
 </body>
 </html>
