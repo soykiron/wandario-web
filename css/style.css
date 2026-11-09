@@ -74,9 +74,9 @@ footer a:hover{color:var(--gold)}
 .doc h2{font-size:20px;color:var(--burgundy);margin:28px 0 8px;text-align:left}
 .doc p,.doc li{font-size:16px;margin-bottom:10px}
 .doc a{color:var(--burgundy);font-weight:500}
-.doc details{background:#fffdf8;border:1px solid rgba(109,26,46,.15);border-radius:14px;padding:14px 18px;margin-bottom:10px}
-.doc summary{font-weight:600;cursor:pointer;color:var(--burgundy)}
-.doc details p{margin:10px 0 2px}
+.doc main details{background:#fffdf8;border:1px solid rgba(109,26,46,.15);border-radius:14px;padding:14px 18px;margin-bottom:10px}
+.doc main summary{font-weight:600;cursor:pointer;color:var(--burgundy)}
+.doc main details p{margin:10px 0 2px}
 .doc footer{background:var(--night);color:var(--soft)}
 .doc footer a{color:var(--soft);font-weight:400}
 .doc footer a:hover{color:var(--gold)}
