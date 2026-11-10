@@ -205,3 +205,54 @@ a.badge:hover{background:rgba(224,185,74,.18);transform:translateY(-2px)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.js .reveal{opacity:1;transform:none}.twinkle{opacity:.4}}
 @media(min-width:880px){.hero{grid-template-columns:1.15fr .85fr}}
 @media(max-width:520px){header.top nav{right:14px}header.top nav .sup{display:none}}
+/* Móvil (solo pantallas de 700 px o menos): el ordenador no cambia. El salto de línea del titular y el correo del pie solo se tocan aquí. */
+.mb{display:none}
+@media(max-width:700px){
+  html,body{overflow-x:clip}
+  .wrap{padding-left:26px;padding-right:26px}
+  section{padding:30px 0}
+  section h2{font-size:20.5px;margin-bottom:8px}
+  section .sub{margin-bottom:18px;font-size:14px}
+
+  .hero{grid-template-columns:1fr 132px;grid-template-rows:auto auto auto auto 1fr;column-gap:28px;row-gap:0;padding:4px 26px 26px;align-items:start}
+  .hero>div:first-child{display:contents}
+  .hero h1{grid-column:1 / -1;text-align:center;font-size:13px;line-height:1.3;margin:-17px 0 32px;padding:0 4px}
+  .hero p.lead{grid-column:1;grid-row:2;font-size:13px;line-height:1.45;margin:0;text-align:center}
+  .badges{grid-column:1;grid-row:3;flex-direction:column;gap:7px;margin-top:14px}
+  .badge{padding:8px 6px;font-size:11px;white-space:nowrap;justify-content:center;text-align:center;border-radius:10px}
+  .soon{grid-column:1;grid-row:4;font-size:11.5px;margin-top:8px;text-align:center}
+  .hero-art{grid-column:2;grid-row:2 / 6;align-self:center;padding:6px 0 22px;margin:0 -4px 0 0}
+  .hero .phone.hpf{max-width:none;width:100%}
+
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .card{container-type:inline-size;min-width:0;aspect-ratio:1/1.13;overflow:hidden;padding:9% 5% 5%;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;text-align:center}
+  .card svg{width:14cqw;height:14cqw;margin:0 0 3cqw}
+  .card h3{font-size:9cqw;margin-bottom:2cqw;line-height:1.15}
+  .card p{font-size:7.6cqw;line-height:1.27}
+
+  .screens{grid-template-columns:repeat(3,1fr);gap:10px}
+  .screens .phone{padding:3px;border-radius:16px;box-shadow:0 8px 18px rgba(0,0,0,.45)}
+  .screens figcaption{font-size:11.5px;margin-top:8px}
+
+  .pro{padding:20px 16px;border-radius:18px}
+  .pro h2{margin-bottom:4px}
+  .pro .sub{font-size:13px;margin-bottom:0}
+  .pro ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin:12px 0 4px}
+  .pro li{padding:6px 2px;font-size:11px;text-align:center;white-space:nowrap}
+  .pro p:last-child{font-size:12px!important;margin-top:10px!important}
+  .dl{padding:22px 16px;border-radius:18px}
+  .dl h2{margin-bottom:6px}
+  .dl .sub{font-size:13px}
+  .stores{gap:10px;margin-top:14px}
+  .store .btn{padding:9px 14px;font-size:13px}
+
+  footer{padding:16px 0 22px}
+  footer .row{flex-direction:column;align-items:center;gap:8px;text-align:center}
+  footer .row>div:first-child{white-space:nowrap}
+  footer a{margin-right:0;font-size:11.5px}
+  footer .row>div:first-child a+a{margin-left:12px}
+  footer .row>div:last-child{font-size:12px}
+  .fe{display:none}
+  .mb{display:inline}
+}
+@media(max-width:340px){.cards{grid-template-columns:1fr}}
