@@ -202,6 +202,10 @@ header.top{z-index:40}
 .screens .phone:hover{transform:translateY(-8px) rotate(-1deg)}
 .badge{transition:background .25s ease,transform .25s ease}
 a.badge:hover{background:rgba(224,185,74,.18);transform:translateY(-2px)}
+.social{display:inline-flex;gap:14px;margin-right:16px;vertical-align:middle}
+.social a{display:inline-flex;width:20px;height:20px;color:var(--soft);margin:0!important;transition:color .2s ease,transform .2s ease}
+.social a:hover{color:var(--gold);transform:translateY(-1px)}
+.social svg{width:100%;height:100%}
 .kit-back{display:inline-flex;align-items:center;gap:7px;font-size:15px;font-weight:600;text-decoration:none;color:var(--gold);padding:10px 0}
 .kit-back:hover{text-decoration:underline}
 .kit-hero{text-align:center;padding:14px 0 4px}
@@ -313,7 +317,7 @@ a.kit-btn:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.35)
 
   footer{padding:16px 0 22px}
   footer .row{flex-direction:column;align-items:center;gap:8px;text-align:center}
-  footer .row>div:first-child{white-space:nowrap}
+  footer .row>div:first-child{display:flex;flex-wrap:wrap;justify-content:center;gap:4px 14px}
   footer a{margin-right:0;font-size:11.5px}
   footer .row>div:first-child a+a{margin-left:12px}
   footer .row>div:last-child{font-size:12px}
