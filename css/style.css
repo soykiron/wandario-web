@@ -202,6 +202,20 @@ header.top{z-index:40}
 .screens .phone:hover{transform:translateY(-8px) rotate(-1deg)}
 .badge{transition:background .25s ease,transform .25s ease}
 a.badge:hover{background:rgba(224,185,74,.18);transform:translateY(-2px)}
+header.top{z-index:5}
+.mnav{display:none}
+@media(max-width:520px){
+.mnav{display:block;position:absolute;left:6px;top:50%;transform:translateY(-50%)}
+.mnav summary{list-style:none;width:44px;height:44px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+.mnav summary::-webkit-details-marker{display:none}
+.mnav summary span{display:block;width:22px;height:2.5px;border-radius:2px;background:linear-gradient(90deg,#f7e7b0,#c9a227);transition:transform .2s ease,opacity .2s ease}
+.mnav[open] summary span:nth-child(1){transform:translateY(7.5px) rotate(45deg)}
+.mnav[open] summary span:nth-child(2){opacity:0}
+.mnav[open] summary span:nth-child(3){transform:translateY(-7.5px) rotate(-45deg)}
+.mpanel{position:absolute;left:6px;top:calc(100% + 2px);min-width:0;background:rgba(58,12,25,.78);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);border:1.5px solid rgba(224,185,74,.55);border-radius:12px;padding:5px;box-shadow:0 14px 34px rgba(0,0,0,.55);display:flex;flex-direction:column}
+.mpanel a,.doc header.top .mpanel a{padding:7px 12px;border-radius:8px;color:var(--cream);text-decoration:none;font-size:12.5px;font-weight:500;white-space:nowrap;margin:0}
+.mpanel a:hover,.doc header.top .mpanel a:hover{background:rgba(224,185,74,.14);color:var(--gold)}
+}
 .social{display:inline-flex;gap:14px;margin-right:16px;vertical-align:middle}
 .social a{display:inline-flex;width:20px;height:20px;color:var(--soft);margin:0!important;transition:color .2s ease,transform .2s ease}
 .social a:hover{color:var(--gold);transform:translateY(-1px)}
