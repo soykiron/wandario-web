@@ -26,7 +26,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="/css/style.css?v=11f3b00a">
-<script>(function(){if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)return;var moved=false;['touchstart','wheel','keydown','mousedown'].forEach(function(e){addEventListener(e,function(){moved=true},{once:true,passive:true})});function top(){if(!moved)window.scrollTo(0,0)}top();addEventListener('load',function(){top();setTimeout(top,80);setTimeout(top,400);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(top)});addEventListener('pageshow',top)})()</script>
+<script>(function(){if('scrollRestoration' in history)history.scrollRestoration='manual';if(location.hash)return;var moved=false,t0=Date.now();['touchstart','wheel','keydown','mousedown'].forEach(function(e){addEventListener(e,function(){moved=true},{once:true,passive:true,capture:true})});function y(){return window.pageYOffset||document.documentElement.scrollTop||0}function top(){if(!moved&&y()>0)window.scrollTo(0,0)}(function loop(){top();if(!moved&&Date.now()-t0<3500)requestAnimationFrame(loop)})();addEventListener('scroll',function(){if(Date.now()-t0<3500)top()},{passive:true});addEventListener('load',top);addEventListener('pageshow',top)})()</script>
 <script>document.documentElement.className+=" js"</script>
 </head>
 <body class="stars">
